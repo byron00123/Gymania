@@ -1,0 +1,46 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "name": "Push ups",
+      "image": "https://www.example.com/push-ups.jpg",
+      "equipment": "None",
+      "duration": 30
+    },
+    {
+      "id": 2,
+      "name": "Squats",
+      "image": "https://www.example.com/squats.jpg",
+      "equipment": "Barbell",
+      "duration": 60
+    },
+    {
+      "name": "cardio",
+      "image": "https://www.shape.com/thmb/qr6AnPByfid8VTqqv9nrKgJOUr0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-cardio-exercises-promo-2000-498cbfb8f07541b78572bf810e7fb600.jpg",
+      "equipment": "jump rope",
+      "duration": "40",
+      "id": 3
+    },
+    {
+      "name": "cardio",
+      "image": "https://www.shape.com/thmb/qr6AnPByfid8VTqqv9nrKgJOUr0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/best-cardio-exercises-promo-2000-498cbfb8f07541b78572bf810e7fb600.jpg",
+      "equipment": "jump rope",
+      "duration": "40",
+      "id": 4
+    },
+    {
+      "name": "situps",
+      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.gq.com%2Fphotos%2F580a26d7aafbc05a239a57f7%2Fmaster%2Fw_5616%2Ch_3744%2Cc_limit%2Fsit-up-butt.jpg&tbnid=HFEXKddc2hcHMM&vet=12ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ..i&imgrefurl=https%3A%2F%2Fwww.gq.com%2Fgallery%2Fsecrets-to-perfect-sit-ups&docid=Ux5aJ_jzUpOiWM&w=5616&h=3744&q=situps&ved=2ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ",
+      "equipment": "mat",
+      "duration": "20",
+      "id": 6
+    },
+    {
+      "name": "situps",
+      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.gq.com%2Fphotos%2F580a26d7aafbc05a239a57f7%2Fmaster%2Fw_5616%2Ch_3744%2Cc_limit%2Fsit-up-butt.jpg&tbnid=HFEXKddc2hcHMM&vet=12ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ..i&imgrefurl=https%3A%2F%2Fwww.gq.com%2Fgallery%2Fsecrets-to-perfect-sit-ups&docid=Ux5aJ_jzUpOiWM&w=5616&h=3744&q=situps&ved=2ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ",
+      "equipment": "mat",
+      "duration": "20",
+      "id": 7
+    }
+  ]
+}
