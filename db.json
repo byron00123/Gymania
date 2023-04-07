@@ -9,9 +9,9 @@
     },
     {
       "name": "Squats",
-      "image": "https://unsplash.com/photos/optBC2FxCfc",
+      "image": "https://www.themanual.com/wp-content/uploads/sites/9/2022/12/sergio-pedemonte-g_1skq9gl8o-unsplash-800x800-1.jpeg?fit=800%2C800&p=1",
       "equipment": "Barbell",
-      "duration": "70",
+      "duration": "30",
       "id": 2
     },
     {
@@ -30,9 +30,9 @@
     },
     {
       "name": "situps",
-      "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.gq.com%2Fphotos%2F580a26d7aafbc05a239a57f7%2Fmaster%2Fw_5616%2Ch_3744%2Cc_limit%2Fsit-up-butt.jpg&tbnid=HFEXKddc2hcHMM&vet=12ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ..i&imgrefurl=https%3A%2F%2Fwww.gq.com%2Fgallery%2Fsecrets-to-perfect-sit-ups&docid=Ux5aJ_jzUpOiWM&w=5616&h=3744&q=situps&ved=2ahUKEwjFktS0kpD-AhX9pycCHQZSBsUQMygAegUIARDjAQ",
+      "image": "https://media.gq.com/photos/580a2b24f079a45e2ed55593/master/w_1920%2Cc_limit/sit-up.jpg",
       "equipment": "mat",
-      "duration": "20",
+      "duration": "40",
       "id": 6
     },
     {

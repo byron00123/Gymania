@@ -22,34 +22,10 @@ const updateBtn = document.querySelector('#update-btn');
 const deleteForm = document.querySelector('#delete-form');
 const deleteId = document.querySelector('#id');
 const deleteBtn = document.querySelector('#delete-btn');
+let gyms = []; // Define the gyms array
 
 // Search workouts by name
-searchForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  workoutsList.innerHTML = '';
-  const name = searchInput.value;
-  fetch(`${API_URL}?name=${name}`)
-    .then((response) => response.json())
-    .then((data) => {
-      data.forEach((workout) => {
-        const li = document.createElement('li');
-        const img = document.createElement('img');
-        const h3 = document.createElement('h3');
-        const p1 = document.createElement('p');
-        const p2 = document.createElement('p');
-        img.src = workout.image;
-       h3.textContent = workout.name;
-        p1.textContent = `Equipment: ${workout.equipment}`;
-        p2.textContent = `Duration: ${workout.duration}s`;
-        li.appendChild(img);
-        li.appendChild(h3);
-        li.appendChild(p1);
-        li.appendChild(p2);
-        workoutsList.appendChild(li);
-     });
-    })
-    .catch((error) => console.log(error));
-});
+// Add an event listener to the search form
 
 
 
