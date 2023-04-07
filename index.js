@@ -106,16 +106,21 @@ updateForm.addEventListener('submit', (event) => {
 	});
 	
 	// Delete workout
-	deleteForm.addEventListener('submit', (event) => {
-	event.preventDefault();
-	const id = deleteId.value;
-	fetch(`${API_URL}/${id}`, {
-	method: 'DELETE',
-	})
-	.then((response) => response.json())
-	.then((data)=> console.log(data))
-	.catch((error) => console.log(error));
-	});
+	deleteBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+  
+    const id = deleteForm.elements.id.value;
+  
+    fetch(`${API_URL}/${id}`, {
+      method: 'DELETE'
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        deleteForm.reset();
+      })
+      .catch((error) => console.log(error));
+  });
 
 
 	//render workouts

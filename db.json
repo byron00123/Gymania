@@ -67,15 +67,8 @@
       "name": "cardio",
       "image": "https://images.theconversation.com/files/478906/original/file-20220812-22-plgtr.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop",
       "equipment": "no equipment",
-      "duration": "20",
+      "duration": "70",
       "id": 12
-    },
-    {
-      "name": "1",
-      "image": "https://images.theconversation.com/files/478906/original/file-20220812-22-plgtr.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop",
-      "equipment": "mat",
-      "duration": "100",
-      "id": 13
     }
   ]
 }
