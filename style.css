@@ -113,4 +113,24 @@
 	padding: 10px;
 	text-align: center;
   }
+
+
+  /*styling workout output*/
+  #workouts-container {
+	position: absolute;
+	top: 80px; /* adjust this value to match the height of your nav bar */
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+  }
+  
+  #workouts-list {
+	list-style: none;
+	margin-top: 20px;
+  }
+  
   

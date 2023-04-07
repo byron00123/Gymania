@@ -38,7 +38,7 @@ searchForm.addEventListener('submit', (event) => {
         const p1 = document.createElement('p');
         const p2 = document.createElement('p');
         img.src = workout.image;
-        h3.textContent = workout.name;
+       h3.textContent = workout.name;
         p1.textContent = `Equipment: ${workout.equipment}`;
         p2.textContent = `Duration: ${workout.duration}s`;
         li.appendChild(img);
@@ -46,10 +46,15 @@ searchForm.addEventListener('submit', (event) => {
         li.appendChild(p1);
         li.appendChild(p2);
         workoutsList.appendChild(li);
-      });
+     });
     })
     .catch((error) => console.log(error));
 });
+
+
+
+  
+
 
 // Create workout
 createForm.addEventListener('submit', (event) => {
@@ -111,3 +116,63 @@ updateForm.addEventListener('submit', (event) => {
 	.then((data)=> console.log(data))
 	.catch((error) => console.log(error));
 	});
+
+
+	//render workouts
+	//const workoutsList = document.querySelector('#workouts-list');
+
+function renderWorkouts(workouts) {
+  // Clear any existing workouts from the list
+  workoutsList.innerHTML = '';
+
+  // Loop through the workouts and create an li element for each one
+  workouts.forEach((workout) => {
+    const li = document.createElement('li');
+
+    // Create an image element for the workout
+    const img = document.createElement('img');
+    img.src = workout.image;
+
+    // Create a span element for the workout name and duration
+    const span = document.createElement('span');
+    span.textContent = `${workout.name} - ${workout.duration}s`;
+
+    // Append the image and span to the li element
+    li.appendChild(img);
+    li.appendChild(span);
+
+    // Append the li element to the workouts list
+    workoutsList.appendChild(li);
+  });
+}
+
+//render workout
+
+
+fetch(API_URL)
+  .then(response => response.json())
+  .then(workouts => {
+    const workoutsList = document.querySelector('#workouts-list');
+    
+    // Clear any existing workouts in the list
+    workoutsList.innerHTML = '';
+    
+    // Loop through each workout and create an HTML element for it
+    workouts.forEach(workout => {
+      const workoutElem = document.createElement('li');
+      workoutElem.innerHTML = `
+        <div class="workout-item">
+          <img src="${workout.image}" alt="${workout.name}">
+          <h3>${workout.name}</h3>
+          <p>Equipment: ${workout.equipment}</p>
+          <p>Duration: ${workout.duration}s</p>
+        </div>
+      `;
+      
+      // Add the workout element to the workouts list
+      workoutsList.appendChild(workoutElem);
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching workouts:', error);
+  });
